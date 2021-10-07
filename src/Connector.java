@@ -53,6 +53,10 @@ public class Connector implements Closeable{
         }
     }
 
+    public Socket getSocket() {
+        return socket;
+    }
+
     @Override
     public void close() throws IOException {
         reader.close();
